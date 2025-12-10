@@ -1,14 +1,17 @@
-﻿using System;
+﻿using Programs.CSharpPrograms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Programs
+namespace CSharpPrograms
 {
-    class FindMissingNumberFromArray
+    class FindMissingNumberFromArray : IProgram
     {
-        public static void MissingNumberExercise()
+        public string Name => "Find Missing number from array";
+
+        public void Run()
         {
             int[] arr = { 17, 19, 20, 21, 22, 23 };
 
